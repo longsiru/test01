@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* wrap */
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.board_list {
+    width: 100%;
+    border-top: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+}
+
+.board_list caption {
+    padding: 30px;
+}
+
+.board_list th,td {
+    padding: 10px;
+    text-align: center;
+    border-spacing: 0;
+    border-bottom: 1px solid black;
+}
+
+
+.board_list td.title > a:hover {
+    text-decoration: underline;
+}
+
+
+/* button */
+.bt_wrap {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.bt_wrap a {
+    min-width: 80px;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+}
+
+.bt_wrap a:hover {
+    text-decoration: underline;
+}
+
+.bt_list {
+    text-align: right;
+}
+
+
+
+/* page */
+.board_page {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.board_page a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+
+.board_page a:hover {
+    text-decoration: underline;
+}
+
+.board_page a.bt {
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+}
+
+.board_page a.num {
+    font-size: 1.4rem;
+
+}
+
+.board_page a.num.on {
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+
+
+/* 767px */
+@media all and (max-width: 767px) {
+    .wrap {
+      width: 95vw;
+      margin: 0 auto;
+    }
+  
+    .board_list th:nth-of-type(1),
+    .board_list td:nth-of-type(1) {
+      display: none;
+    }
+    .board_list th:nth-of-type(3),
+    .board_list td:nth-of-type(3) {
+      display: none;
+    }
+    .board_list th:nth-of-type(4),
+    .board_list td:nth-of-type(4) {
+      display: none;
+    }
+  
+    .board_wrap {
+      width: 100vw;
+    }
+}
